@@ -25,11 +25,15 @@
   border-radius: 2px;
   border: none;
   background-color: $color-pink;
+  transition: all 500ms ease;
   &__link {
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
     color: #fff;
+  }
+  &:hover {
+    background: $color-blue;
   }
 }
 .avatar {
@@ -45,7 +49,7 @@
     left: 5px;
     width: 243px;
     height: 243px;
-    background-image: url('../../img/avatar.jpg');
+    background-image: url("../../img/avatar.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
