@@ -1,6 +1,7 @@
 const {src, dest, series, watch} = require('gulp');
 const del = require('del');
 const sass = require('gulp-dart-sass');
+const autoprefixer = require('gulp-autoprefixer');
 const squoosh = require('gulp-squoosh');
 const uglify = require('gulp-uglify-es').default;
 const cleanCSS = require('gulp-clean-css');
@@ -53,6 +54,10 @@ function sprite() {
 function scss() {
   return src(sourceFolder + '/scss/main.scss')
     .pipe(sass())
+    .pipe(autoprefixer({
+      overrideBrowserslist: ['last 3 versions'],
+      cascade: false
+    }))
     .pipe(cleanCSS({level: 2}))
     .pipe(dest(buildFolder + '/css'))
     .pipe(sass().on('error', sass.logError))

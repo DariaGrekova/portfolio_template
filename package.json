@@ -20,6 +20,7 @@
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-avif-webp-html": "^1.0.2",
     "gulp-cache-bust": "^1.4.1",
     "gulp-clean-css": "^4.3.0",
