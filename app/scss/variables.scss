@@ -1,12 +1,9 @@
 //bacgrounds
-@each $color-name,
-  $color-value
-    in ("pink": #ff6464, "blue": #00a8cc, "dark": #21243d, "light": #8695a4)
-{
-  .#{$color-name} {
-    color: $color-value;
-  }
-}
+$color-pink: #ff6464;
+$color-dark: #21243d;
+$color-light: #8695a4;
+$color-blue: #00a8cc;
+$color-sky: #edf7fa;
 
 //fonts
-$basic-family: "Heebo", "Arial", sans-serif;
+$basic-family: 'Heebo', 'Arial', sans-serif;

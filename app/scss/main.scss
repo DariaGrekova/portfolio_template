@@ -1,20 +1,22 @@
-@import "variables"; //пишем переменные
-@import "reset"; //сборс стилей
-@import "fonts"; //подключаем шрифты (локально)
+@import 'variables'; //пишем переменные
+@import 'reset'; //сборс стилей
+@import 'fonts'; //подключаем шрифты (локально)
 
 //подключаем БЭМ блоки
-@import "blocks/header";
-@import "blocks/hello-page";
-@import "blocks/recent-posts";
-@import "blocks/featured-works";
-@import "blocks/footer";
 
+@import 'blocks/header';
+@import 'blocks/hello-page';
+@import 'blocks/recent-posts';
+@import 'blocks/featured-works';
+@import 'blocks/footer';
 .container {
   max-width: 1152px;
   margin: 104px auto 146px;
+  color: $color-dark;
 }
 
 // MEDIA QUERIES
+
 @media screen and (max-width: 986px) {
   .container {
     margin: 52px auto;

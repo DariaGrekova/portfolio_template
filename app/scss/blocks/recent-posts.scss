@@ -1,16 +1,14 @@
 .recent-posts {
   padding: 0 148px;
-  background-color: #edf7fa;
+  background-color: $color-sky;
   &__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   &__link {
-    color: #00a8cc;
+    color: $color-blue;
   }
-
   &__cards {
     display: flex;
     justify-content: space-between;
@@ -27,32 +25,39 @@
   margin: 0 0 30px;
   padding: 25px;
   min-width: 354px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgb(187 225 250 / 25%);
   border-radius: 4px;
-
   &__title {
     font-weight: 700;
     font-size: 26px;
     line-height: 38px;
     margin-bottom: 10px;
   }
-
   &__info {
     display: flex;
     justify-content: flex-start;
     padding: 10px 0;
     &_data {
     }
-
     &_line {
+      margin: 0 24px;
+      position: relative;
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #000;
+      }
     }
-
     &_about {
     }
   }
-
   &__text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -78,16 +83,13 @@
 @media screen and (max-width: 524px) {
   .recent-posts {
     padding: 0 10px;
-
     &__title {
       justify-content: center;
     }
-
     &__link {
       display: none;
     }
   }
-
   .card {
     padding: 10px 20px;
     min-width: 100%;

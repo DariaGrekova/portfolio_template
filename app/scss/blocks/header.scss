@@ -1,28 +1,23 @@
-// header
 header {
   display: flex;
   justify-content: flex-end;
 }
-
 .menu {
   margin: 0 60px 170px 0;
-
   &.active {
     transform: translateX(0);
   }
 }
-
 .navigation {
   display: flex;
   justify-content: flex-end;
-
   &__link {
     margin-left: 33px;
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
     text-align: right;
-    color: #000000;
+    color: #000;
   }
 }
 
@@ -44,7 +39,6 @@ header {
   header {
     margin-bottom: 50px;
   }
-
   .menu-btn {
     margin-right: 15px;
     width: 30px;
@@ -52,7 +46,6 @@ header {
     position: relative;
     z-index: 3;
     overflow: hidden;
-
     &.active {
       span {
         &:nth-of-type(1) {
@@ -68,7 +61,6 @@ header {
         }
       }
     }
-
     span {
       width: 30px;
       height: 2px;
@@ -76,13 +68,11 @@ header {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: #222222;
+      background-color: #222;
       transition: all 0.5s;
-
       &:nth-of-type(2) {
         top: calc(50% - 10px);
       }
-
       &:nth-of-type(3) {
         top: calc(50% + 10px);
       }
@@ -96,17 +86,15 @@ header {
     height: 200px;
     margin: 0;
     padding: 90px 30px 15px;
-    background: #edf7fa;
-    box-shadow: 0px 8px 20px rgba(187, 225, 250, 0.25);
+    background: $color-sky;
+    box-shadow: 0 8px 20px rgb(187 225 250 / 25%);
     transform: translateX(110%);
     transition: transform 0.5s;
     z-index: 2;
   }
-
   .navigation {
     flex-direction: column;
     align-items: flex-start;
-
     &__link {
       margin-left: 0;
     }
