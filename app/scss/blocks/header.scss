@@ -16,3 +16,23 @@
     color: #000000;
   }
 }
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 986px) {
+  .menu {
+    margin: 0 60px 85px 0;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .menu {
+    margin: 0 60px 42px 0;
+  }
+}
+
+@media screen and (max-width: 514px) {
+  .menu {
+    display: none;
+  }
+}

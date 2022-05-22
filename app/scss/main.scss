@@ -13,3 +13,16 @@
   max-width: 1152px;
   margin: 104px auto 146px;
 }
+
+// MEDIA QUERIES
+@media screen and (max-width: 986px) {
+  .container {
+    margin: 52px auto;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .container {
+    margin: 26px auto;
+  }
+}

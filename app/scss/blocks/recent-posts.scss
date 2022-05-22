@@ -55,3 +55,41 @@
   &__text {
   }
 }
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1150px) {
+  .recent-posts {
+    &__cards {
+      flex-direction: column;
+    }
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .recent-posts {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .recent-posts {
+    padding: 0 10px;
+
+    &__title {
+      justify-content: center;
+    }
+
+    &__link {
+      display: none;
+    }
+  }
+
+  .card {
+    padding: 10px 20px;
+    min-width: 100%;
+  }
+}
