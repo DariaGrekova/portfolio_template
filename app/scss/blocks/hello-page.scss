@@ -1,0 +1,60 @@
+.hello-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 148px;
+}
+.content {
+  flex: 0 1 497px;
+  margin-bottom: 70px;
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  &__description {
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__button {
+  }
+}
+.button {
+  padding: 9px 20px;
+  border-radius: 2px;
+  border: none;
+  background-color: #ff6464;
+
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+
+    color: #ffffff;
+  }
+}
+.avatar {
+  position: relative;
+  align-self: flex-start;
+  width: 243px;
+  height: 243px;
+
+  &__bg {
+  }
+
+  &__img {
+    position: absolute;
+    top: -13px;
+    left: 5px;
+    width: 243px;
+    height: 243px;
+
+    background-image: url("../../img/avatar.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+}

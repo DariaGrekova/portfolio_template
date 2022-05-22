@@ -1,0 +1,14 @@
+@import "variables"; //пишем переменные
+@import "reset"; //сборс стилей
+@import "fonts"; //подключаем шрифты (локально)
+
+//подключаем БЭМ блоки
+@import "blocks/header";
+@import "blocks/hello-page";
+@import "blocks/recent-posts";
+
+.container {
+  max-width: 1152px;
+  margin: 104px auto 146px;
+  //  padding: 0 148px;
+}
