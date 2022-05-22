@@ -5,6 +5,7 @@
  - Основы адаптивной верстки
  - Основы FlexBox
  - Основы SVG
+ - Меню "бургер" на чистом JS
 
 # 
 https://frontend-everyday-task-1.vercel.app/
