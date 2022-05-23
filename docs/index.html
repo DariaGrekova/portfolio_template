@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1653235313939" />
+    <link rel="stylesheet" href="css/main.css?t=1653316597391" />
     <script></script>
   </head>
 
@@ -18,13 +18,21 @@
   </div>
   <nav class="menu">
     <ul class="navigation">
-      <li class="navigation__link">Works</li>
-      <li class="navigation__link">Blog</li>
-      <li class="navigation__link">Contact</li>
+      <a href="#Works" class="navigation__link">
+        <li>Works</li>
+      </a>
+      <a href="#Blog" class="navigation__link">
+        <li>Blog</li>
+      </a>
+      <a href="#Contacts" class="navigation__link">
+        <li>Contact</li>
+      </a>
     </ul>
   </nav>
 </header>
- <section class="hello-page">
+
+      <div class="bg"></div>
+      <section class="hello-page">
   <div class="content">
     <h1 class="content__title">
       Hi, I am John, <br> Creative Technologist
@@ -45,7 +53,7 @@
     <div class="avatar__img"> </div>
 </section>
 
-      <section class="recent-posts">
+      <section class="recent-posts" id="Blog">
   <div class="recent-posts__title">
     <h2 class="subtitle">Recent posts</h2>
     <a class="recent-posts__link">View all</a>
@@ -88,7 +96,7 @@
   </article>
 </section>
 
-      <section class="featured-works">
+      <section class="featured-works" id="Works">
   <div class="featured-works__title">
     <h2 class="subtitle">Featured works</h2>
   </div>
@@ -152,7 +160,7 @@
     </div>
   </article>
 </section>
- <footer class="footer">
+ <footer class="footer" id="Contacts">
   <div class="footer__icons icons">
     <a href="#">
       <svg class="icons__icon">
@@ -181,6 +189,6 @@
 </footer>
 
     </div>
-    <script src="js/main.js?t=1653235313939"></script>
+    <script src="js/main.js?t=1653316597391"></script>
   </body>
 </html>

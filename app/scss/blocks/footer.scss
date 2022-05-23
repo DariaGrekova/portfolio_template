@@ -18,5 +18,11 @@
     margin-bottom: 25px;
     width: 30px;
     height: 30px;
+    fill: #21243D;
+    transition: all 500ms ease;
+    &:hover {
+      fill: #ff6464;
+    }
   }
+
 }
