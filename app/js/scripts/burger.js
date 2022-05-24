@@ -12,7 +12,8 @@ export function testFunction() {
   })
 
   // scroll
-  document.querySelectorAll('a[href^="#"').forEach(link => {
+  const navigation = document.querySelector('.navigation');
+  navigation.querySelectorAll('a[href^="#"').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
 
