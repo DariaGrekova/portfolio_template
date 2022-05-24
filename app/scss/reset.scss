@@ -15,6 +15,7 @@ a {
   cursor: pointer;
 }
 .link {
+  color: $color-dark;
   &:visited {
     color: $color-dark;
   }
